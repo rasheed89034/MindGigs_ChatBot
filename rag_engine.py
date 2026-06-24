@@ -29,7 +29,7 @@ def setup_rag_pipeline():
     retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
     # 2. LLM (Gemini) Setup
-    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
+    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0)
 
     # 3. Prompt Engineering
     system_prompt = (
